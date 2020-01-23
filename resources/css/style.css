@@ -16,13 +16,15 @@ border: 0.02px solid red;
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -325,16 +327,17 @@ header {
 }
 
 .works-step div {
-  border: 2px solid #e67e22;
   color: #e67e22;
-  display: inline-block;
-  border-radius: 50%;
+  font-size: 150%;
   height: 50px;
   width: 50px;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  display: inline-block;
   text-align: center;
-  padding: 5px;
-  font-size: 150%;
   margin-right: 25px;
+  float: left;
+  padding: 5px;
 }
 
 .btn-app:link,
