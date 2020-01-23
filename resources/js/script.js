@@ -16,7 +16,7 @@ $(document).ready(function() {
     }
   );
 
-  //   Scroll to Plans Section after Clicking "I'm Hungry" Button
+  //   Scroll to Plans Section after Clicking "I'm hungry" Button
   // ==================================================================
   $('.js--scroll-to-plans').click(function() {
     $('html, body').animate(
@@ -40,7 +40,6 @@ $(document).ready(function() {
 
   //   Navigation Scroll
   // ==================================================================
-
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -83,6 +82,44 @@ $(document).ready(function() {
         }
       }
     });
+
+  //   Animations on Scroll
+  // ==================================================================
+  $('.js--wp-1').waypoint(
+    function(direction) {
+      $('.js--wp-1').addClass('animated fadeIn');
+    },
+    {
+      offset: '50%'
+    }
+  );
+
+  $('.js--wp-2').waypoint(
+    function(direction) {
+      $('.js--wp-2').addClass('animated fadeInUp');
+    },
+    {
+      offset: '50%'
+    }
+  );
+
+  $('.js--wp-3').waypoint(
+    function(direction) {
+      $('.js--wp-3').addClass('animated fadeIn');
+    },
+    {
+      offset: '50%'
+    }
+  );
+
+  $('.js--wp-4').waypoint(
+    function(direction) {
+      $('.js--wp-4').addClass('animated pulse');
+    },
+    {
+      offset: '50%'
+    }
+  );
 });
 
 /*
