@@ -121,8 +121,22 @@ $(document).ready(function() {
     }
   );
 
-  //   RESPONSIVE NAVIGATION
+  //   Mobile Navigation
   // ==================================================================
+  $('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon ion-icon');
+
+    nav.slideToggle(200);
+    // THIS LINE WILL NEED TO BE FIXED BECAUSE THE ICONS DO NOT CONTAIN CLASSES.
+    if (icon.hasClass('ion-navicon-round')) {
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+    } else {
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('ion-close-round');
+    }
+  });
 });
 
 /*
