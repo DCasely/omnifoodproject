@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible."/>
+    <meta
+      name="description"
+      content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible."
+    />
     <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="./vendors/css/animate.css" />
@@ -364,7 +367,10 @@
             with no time for cooking, so Omnifood is a life-saver. Now that I
             got used to it, I couldn't live without my daily meals!
             <cite>
-              <img src="./resources/css/img/customer-1.jpg" alt="Alberto Duncan"/>Alberto Duncan
+              <img
+                src="./resources/css/img/customer-1.jpg"
+                alt="Alberto Duncan"
+              />Alberto Duncan
             </cite>
           </blockquote>
         </div>
@@ -374,7 +380,10 @@
             home. We have lots of food delivery here in Lisbon, but no one comes
             even close to Omnifood. Me and my family are so in love!
             <cite>
-              <img src="./resources/css/img/customer-2.jpg" alt="Joana Silva" />Joana Silva
+              <img
+                src="./resources/css/img/customer-2.jpg"
+                alt="Joana Silva"
+              />Joana Silva
             </cite>
           </blockquote>
         </div>
@@ -384,7 +393,10 @@
             Francisco. I tried a lot of them and ended up with Omnifood. Best
             food delivery service in the Bay Area. Keep up the great work!
             <cite>
-              <img src="./resources/css/img/customer-3.jpg" alt="Milton Chapman" />Milton Chapman
+              <img
+                src="./resources/css/img/customer-3.jpg"
+                alt="Milton Chapman"
+              />Milton Chapman
             </cite>
           </blockquote>
         </div>
@@ -499,13 +511,30 @@
     </section>
 
     <!-- SIGN UP FORM SECTION -->
-    <section class="section-form">
+    <section class="section-form" id="form">
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
 
       <div class="row">
-        <form method="post" action="#" class="contact-form">
+        <form method="post" action="mailer.php" class="contact-form">
+
+
+          <!-- This Code May REQUIRE File to be Updated to .php -->
+          <!-- <div class="row">
+            <?php
+            if($_GET['success'] == 1) {
+              echo "<div class=\"form-messages success\">
+              Thank you! Your message has been sent.</div>";
+            }
+            if($_GET['success'] == -1) {
+              echo "<div class=\"form-messages error\">
+                Oops! Something went wrong please try again.</div>";
+            }
+            ?>
+          </div> 
+        -->
+
           <div class="row">
             <div class="col span-1-of-3">
               <label for="name">Name</label>
