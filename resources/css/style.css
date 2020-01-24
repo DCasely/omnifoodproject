@@ -199,7 +199,7 @@ input[type='submit']:active {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/hero-min.jpg);
+    url(./img/cover.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
